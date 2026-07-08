@@ -23,3 +23,9 @@ sudo xcrun simctl erase all
 python3 -m venv path/to/venv
 source path/to/venv/bin/activate
 ```
+##### Clean and Reinstall Pods
+```
+pod deintegrate
+rm -rf Pods Podfile.lock StreamlyTV.xcworkspace
+pod update
+```
